@@ -14,15 +14,13 @@ class FlickrPhotosViewController: UICollectionViewController {
     fileprivate var searches = [FlickrSearchResults]()
     fileprivate let flickr = Flickr()
     fileprivate let itemsPerRow: CGFloat = 3
-
+//
     override func viewDidLoad() {
         super.viewDidLoad()
-
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
